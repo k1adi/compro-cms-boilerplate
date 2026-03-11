@@ -1,0 +1,81 @@
+/* Compro */
+.header {
+  @apply 
+    fixed 
+    top-0 
+    z-50 
+    w-full
+    transition-all
+    duration-300;
+}
+
+.header--top {
+  @apply 
+    bg-white
+    shadow-sm;
+}
+
+.header--scrolled {
+  @apply 
+    bg-white/70
+    shadow-md
+    backdrop-blur-xl;
+}
+
+.section__wrapper {
+  @apply
+    container
+    mx-auto
+    px-4
+    max-w-6xl;
+}
+
+/* CMS */
+.app {
+  @apply
+    flex
+    h-screen
+    overflow-hidden
+    text-gray-800
+}
+
+.app__sidebar {
+  @apply 
+    absolute
+    left-0
+    top-0
+    z-999
+    flex
+    flex-col
+    h-screen
+    w-72
+    overflow-y-hidden
+    duration-150
+    ease-linear
+    bg-white
+    border-r
+}
+
+.app__content {
+  @apply
+    relative
+    flex
+    flex-1
+    flex-col
+    overflow-y-auto
+    overflow-x-hidden
+    w-full
+}
+
+.app__header {
+  @apply 
+    sticky
+    top-0
+    z-99
+    flex
+    w-full
+    drop-shadow-1
+    duration-150
+    ease-linear
+    bg-white
+}

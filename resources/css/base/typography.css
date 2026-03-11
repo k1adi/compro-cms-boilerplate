@@ -1,0 +1,104 @@
+.text--title-wrapper {
+    @apply
+        text-center
+        mb-8
+        md:mb-12
+        lg:mb-16;
+}
+
+.text--title {
+    @apply
+        text-3xl
+        md:text-4xl
+        lg:text-5xl
+        font-bold
+        relative
+        inline-block
+        mb-8;
+}
+
+.text--sub-title {
+    @apply
+        text-lg
+        md:text-xl
+        text-gray-500
+        max-w-3xl
+        mx-auto;
+}
+
+/* Underline variants - centered (default) */
+.text--title--underline-center::before {
+    @apply
+        content-['']
+        absolute
+        -bottom-2
+        md:-bottom-4
+        left-1/2
+        -translate-x-1/2
+        h-[3px]
+        md:h-[5px]
+        bg-primary
+        rounded-lg
+        w-[40%];
+}
+
+/* Left aligned underline */
+.text--title--underline-left::before {
+    @apply
+        content-['']
+        absolute
+        -bottom-2
+        md:-bottom-4
+        left-0
+        h-[3px]
+        md:h-[5px]
+        bg-primary
+        rounded-full
+        w-[45%];
+}
+
+/* Center aligned underline (default) */
+.text--title--underline-center::before {
+    @apply
+        content-['']
+        absolute
+        -bottom-2
+        md:-bottom-4
+        left-1/2
+        -translate-x-1/2
+        h-[3px]
+        md:h-[5px]
+        bg-primary
+        rounded-full
+        w-[40%];
+}
+
+/* Right aligned underline */
+.text--title--underline-right::before {
+    @apply
+        content-['']
+        absolute
+        -bottom-2
+        md:-bottom-4
+        right-0
+        h-[3px]
+        md:h-[5px]
+        bg-primary
+        rounded-full
+        w-[45%];
+}
+
+/* CMS */
+.cms--title {
+	@apply
+    text-title-sm
+    lg:text-title-md
+    font-bold
+}
+
+.cms--sub-heading {
+	@apply
+    text-title-xsm
+    lg:text-title-sm
+    font-bold
+}

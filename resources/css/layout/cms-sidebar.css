@@ -1,0 +1,46 @@
+.cms-sidebar__header {
+  @apply
+		flex
+		items-center
+		justify-between
+		lg:justify-center
+		gap-2
+		px-6
+		py-5
+}
+
+.cms-sidebar__logo {
+  @apply
+		text-center
+		text-2xl
+}
+
+.cms-sidebar__menu {
+  @apply
+		no-scrollbar
+		flex
+		flex-col
+		overflow-y-auto
+		duration-300
+		ease-linear
+		pb-6
+}
+
+.cms-sidebar__version {
+  @apply
+		absolute
+		bottom-0
+		w-full
+		py-3
+		bg-white
+		border-t
+		border-gray-200
+}
+
+.cms-sidebar__version span {
+  @apply
+		block
+		text-center
+		text-xs
+		text-gray-500
+}

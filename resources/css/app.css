@@ -1,0 +1,85 @@
+@import 'base/base';
+@import 'base/content';
+@import 'base/typography';
+@import 'base/gradient';
+
+@import 'component/button';
+@import 'component/form';
+@import 'component/breadcrumb';
+@import 'component/dropdown';
+@import 'component/label';
+@import 'component/loader';
+@import 'component/table';
+@import 'component/toggle-bar';
+
+@import 'layout/navbar';
+@import 'layout/footer';
+@import 'layout/cms-header';
+@import 'layout/cms-nav';
+@import 'layout/cms-sidebar';
+
+@import 'section/hero-banner';
+@import 'section/about';
+@import 'section/room';
+@import 'section/facility';
+@import 'section/contact';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply 
+      scroll-smooth
+      text-base
+      lg:text-lg;
+  }
+
+  body {
+    @apply
+      bg-slate-50
+      font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply
+      font-heading;
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+/* Add this to your CSS file */
+.Toastify__toast {
+  font-family: 'Figtree', serif !important; /* Replace with your desired font */
+}
+
+.ql-toolbar .ql-stroke {
+  fill: none;
+}
+
+.ql-toolbar .ql-fill {
+  stroke: none;
+}
+
+.ql-editor{
+  font-size: 1rem;
+  height: 350px !important;
+  font-family: 'Figtree', serif !important; /* Replace with your desired font */
+}
+
+.quill-read-only .ql-editor {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}

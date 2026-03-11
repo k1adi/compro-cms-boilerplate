@@ -1,0 +1,45 @@
+.facility__wrapper {
+    @apply
+        space-y-12
+        lg:space-y-28
+        py-6
+}
+
+.facility__section {
+    @apply
+        flex
+        flex-col
+        lg:flex-row
+        gap-0
+        lg:gap-8
+        items-center;
+}
+
+.facility__section-img {
+    @apply
+        w-full
+        aspect-video
+        overflow-hidden
+        shadow-lg
+        relative
+        z-10
+        rounded-xl;
+}
+
+.facility__title-main {
+    @apply
+        text-primary
+        font-semibold
+        text-sm
+        lg:text-base
+        mb-2;
+}
+
+.facility__title-sub {
+    @apply
+        text-2xl
+        lg:text-3xl
+        font-bold
+        text-gray-900
+        mb-4;
+}

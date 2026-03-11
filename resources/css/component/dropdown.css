@@ -1,0 +1,57 @@
+.dropdown__wrapper {
+  @apply
+    absolute
+    right-0
+    mt-6
+    w-60
+    flex
+    flex-col
+    rounded-sm
+    shadow-default
+    duration-150
+    ease-linear
+    bg-white
+    border
+    border-stroke
+}
+
+.dropdown__content {
+  @apply 
+    flex
+    flex-col
+    gap-5
+    px-6
+    py-5
+    border-b
+    border-stroke
+}
+
+.dropdown__list {
+  @apply
+    flex
+    items-center
+    gap-3.5
+    text-sm
+    font-medium
+    duration-300
+    ease-in-out
+    lg:text-base
+    text-gray-600
+    hover:text-primary
+}
+
+.dropdown__log-out {
+  @apply 
+    flex
+    items-center
+    gap-3.5
+    px-6
+    py-4
+    text-sm
+    font-medium
+    duration-300
+    ease-in-out
+    lg:text-base
+    text-gray-600
+    hover:text-primary
+}

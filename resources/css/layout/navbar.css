@@ -1,0 +1,113 @@
+.navbar {
+    @apply
+        w-full
+        max-w-screen-2xl
+        mx-auto 
+        px-6 
+        py-3
+        md:py-4;
+}
+
+.nav__contact {
+    @apply 
+        flex 
+        items-center 
+        justify-end
+        gap-2 
+        mb-3
+        md:mb-2;
+}
+
+.nav__contact a {
+    @apply 
+        text-dark
+        hover:text-primary
+        transition-colors 
+        inline-flex 
+        items-center 
+        gap-2
+        text-[10px]
+        md:text-xs;
+}
+
+.nav__img {
+    @apply 
+        w-auto 
+        h-12
+        md:h-14
+        xl:h-16
+        p-1;
+}
+
+.nav__desktop {
+    @apply 
+        hidden 
+        md:flex 
+        items-center 
+        space-x-4
+        lg:space-x-6
+        xl:space-x-8;
+}
+
+.nav__desktop a {
+    @apply 
+        text-dark
+        hover:text-primary 
+        transition-colors 
+        font-semibold;
+}
+
+.nav__button--desktop {
+    @apply 
+        hidden 
+        md:inline-flex 
+        bg-primary 
+        text-white
+        px-4
+        py-2
+        xl:px-6 
+        rounded-lg 
+        font-semibold 
+        hover:bg-secondary 
+        transition-all 
+        items-center 
+        gap-2;
+}
+
+.nav__toggle-button {
+    @apply 
+        md:hidden 
+        text-dark 
+        p-2;
+}
+
+.nav__mobile {
+    @apply
+        md:hidden 
+        pb-4 
+        pt-4;
+}
+
+.nav__mobile a {
+    @apply
+        text-slate-900
+        py-4
+        px-2
+        block
+        font-medium;
+}
+
+.nav__button--mobile {
+    @apply
+        block 
+        mt-4 
+        bg-primary 
+        !text-white
+        px-6 
+        py-3 
+        rounded-lg 
+        font-semibold 
+        hover:bg-secondary 
+        transition-all 
+        text-center;
+}

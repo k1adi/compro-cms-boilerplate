@@ -1,0 +1,68 @@
+/* Room Card Styles with Safari Mobile Support */
+
+.room-card {
+    @apply relative;
+}
+
+/* Safari mobile hover/touch support */
+.room-card:active,
+.room-card:focus-within {
+    @apply shadow-2xl;
+}
+
+/* WebKit prefix for Safari */
+.room-card:active .room-card__info,
+.room-card:focus-within .room-card__info {
+    @apply opacity-100;
+}
+
+.room-card:active .room-card__button,
+.room-card:focus-within .room-card__button {
+    @apply h-8 opacity-100;
+}
+
+/* Smooth transitions with webkit support */
+.room-card__button {
+    @apply h-0 opacity-0 transition-all duration-500;
+    -webkit-transition: all 0.5s ease;
+}
+
+.room-card__info {
+    @apply transition-all duration-500;
+    -webkit-transition: all 0.5s ease;
+}
+
+/* Touch-action for better mobile support */
+.room-card {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* Ensure links are clickable on mobile */
+.room-card a {
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+/* Active state styling for touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .room-card {
+        @apply cursor-pointer;
+    }
+    
+    .room-card:active {
+        @apply shadow-2xl;
+    }
+}
+
+/* Safari mobile touch support */
+@supports (-webkit-touch-callout: none) {
+    .room-card:active .room-card__button {
+        height: 2rem;
+        opacity: 1;
+    }
+    .room-card:active .room-card__title {
+        padding-bottom: 0.5rem;
+    }
+}
