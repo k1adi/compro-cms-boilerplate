@@ -17,9 +17,9 @@ function Create() {
 		<Breadcrumb title='FAQ Create' pageName='Create' prevPage={faqBreadcrumb} />
 	  
 	  <FaqForm 
-		method='post'
-		initialValues={data}
-		routeName='cms.faqs.store'
+      method='post'
+      initialValues={data}
+      routeName='cms.faqs.store'
 	  />
 	</div>
   );

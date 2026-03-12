@@ -27,8 +27,6 @@ export default function DateTimePicker({
   const minimumDate = minDate ? minDate : null;
   const maximumDate = maxDate ? new Date(maxDate) : null;
 
-  const { bu } = usePage().props;
-
   const handleClear = () => {
     if (flatpickrRef.current) {
       flatpickrRef.current.flatpickr.clear();
@@ -81,7 +79,7 @@ export default function DateTimePicker({
         className={`${
           isDisable
             ? "border-gray-300 bg-gray-100 text-gray-500 focus:border-gray-300 focus:ring-gray-300"
-            : `border-gray-300 focus:border-${bu.code} focus:ring-${bu.code}`
+            : `border-gray-300 focus:border-primary focus:ring-primary`
         } rounded-md shadow-sm ${className}`}
       />
 

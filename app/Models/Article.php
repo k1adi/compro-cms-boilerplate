@@ -40,6 +40,23 @@ class Article extends Model implements HasMedia
             ->width(480)
             ->height(320)
             ->sharpen(10)
+            ->optimize()
+            ->performOnCollections('cover');
+
+        $this
+            ->addMediaConversion('medium')
+            ->width(800)
+            ->height(600)
+            ->sharpen(10)
+            ->optimize()
+            ->performOnCollections('cover');
+
+        $this
+            ->addMediaConversion('large')
+            ->width(1200)
+            ->height(800)
+            ->sharpen(10)
+            ->optimize()
             ->performOnCollections('cover');
     }
 
